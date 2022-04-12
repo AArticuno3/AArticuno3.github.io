@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contarest Character Sheet</title>
+    <link rel="stylesheet" href="ContarestCharacterSheet.css" />
+    <script src="ContarestCharacterSheet.js" defer></script>
+  </head>
+
+  <body>
+    <div multi-card-form>
+      <form class="loginPad active" data-card-login>
+        <h3 class="formTitle">Login</h3>
+        <div class="formGroup">
+          <label for="campaign">Campaign</label>
+          <input type="text" required name="campaign" id="campaign" />
+        </div>
+        <div class="formGroup">
+          <label for="email">Username</label>
+          <input type="username" required name="username" id="username" />
+        </div>
+        <div class="formGroup">
+          <label for="password">Password</label>
+          <input type="password" required name="password" id="password" />
+        </div>
+        <button type="button" class="loadButton" data-load-button>
+          Load My Character Sheet
+        </button>
+      </form>
+      <div class="characterSheet" data-card-sheet>
+        <div class="mainInfoCard">
+          <div class="portraitBackground"></div>
+          <div class="portraitImg">
+            <img src="0 Placeholder.png" />
+          </div>
+          <div class="portraitBorder1"></div>
+          <div class="portraitBorder2"></div>
+          <div class="portraitBorder3"></div>
+          <div class="portraitBorder4"></div>
+
+          <div class="infoCard">
+            <div class="leftInfoBorder1"></div>
+            <div class="leftInfoBorder2"></div>
+            <div class="leftInfoCard">
+              <div id="jumpHeightName">
+                <h5>Jump Height</h5>
+              </div>
+              <div id="jumpHeight">
+                <h2>6ft</h2>
+              </div>
+              <div class="leftInfoSplit"></div>
+              <div id="fallHeight">
+                <h2>25ft</h2>
+              </div>
+              <div id="fallHeightName">
+                <h5>Fall Height</h5>
+              </div>
+            </div>
+
+            <div class="rightInfoBorder1"></div>
+            <div class="rightInfoBorder2"></div>
+            <div class="rightInfoCard">
+              <div id="carryWeightName">
+                <h5>Carry Weight</h5>
+              </div>
+              <div id="carryWeight">
+                <h2>250Lb</h2>
+              </div>
+              <div class="rightInfoSplit"></div>
+              <div id="movementSpeed">
+                <h2>33ft</h2>
+              </div>
+              <div id="movementSpeedName">
+                <h5>Movement Speed</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="statsBorder1"></div>
+          <div class="statsBorder2"></div>
+          <div class="statsBorder3"></div>
+          <div class="statsBorder4"></div>
+          <div class="statsCard">
+            <div class="totalArmorHolder">
+              <div class="totalArmorName">
+                <h3>Armor</h3>
+              </div>
+              <div class="totalArmorPoints">
+                <div class="armorBonus">
+                  <h2>+3</h2>
+                </div>
+                <div class="armorTotal">
+                  <h6>(/20)</h6>
+                </div>
+              </div>
+              <div class="totalArmorMagic">
+                <h3>+4</h3>
+              </div>
+            </div>
+            <div class="totalArmorType">
+              <h3>Magic Plate</h3>
+            </div>
+
+            <div class="armorHolder">
+              <div class="headArmorName">
+                <h4>Head</h4>
+              </div>
+              <div class="armorPoints">
+                <div class="armorBonus">
+                  <h3>+3</h3>
+                </div>
+                <div class="armorTotal">
+                  <h6>(*2)</h6>
+                </div>
+              </div>
+              <div class="headArmorMagic">
+                <h4>+1</h4>
+              </div>
+
+              <div class="shoulderArmorMagic1">
+                <h4>+3</h4>
+              </div>
+              <div class="armorPoints">
+                <div class="armorBonus">
+                  <h3>+3</h3>
+                </div>
+                <div class="armorTotal">
+                  <h6>(*2)</h6>
+                </div>
+              </div>
+              <div class="shoulderArmorName">
+                <h4>Shoulders</h4>
+              </div>
+              <div class="armorPoints">
+                <div class="armorBonus">
+                  <h3>+3</h3>
+                </div>
+                <div class="armorTotal">
+                  <h6>(*2)</h6>
+                </div>
+              </div>
+              <div class="shoulderArmorMagic2">
+                <h4>+3</h4>
+              </div>
+
+              <div class="chestArmorName">
+                <h4>Chest</h4>
+              </div>
+              <div class="armorPoints">
+                <div class="armorBonus">
+                  <h3>+3</h3>
+                </div>
+                <div class="armorTotal">
+                  <h6>(*5)</h6>
+                </div>
+              </div>
+              <div class="chestArmorMagic">
+                <h4>+5</h4>
+              </div>
+
+              <div class="armorPoints armorIndented">
+                <div class="armorBonus">
+                  <h3>+3</h3>
+                </div>
+                <div class="armorTotal">
+                  <h6>(*1)</h6>
+                </div>
+              </div>
+              <div class="armArmorMagic1">
+                <h4>+2</h4>
+              </div>
+              <div class="armArmorName">
+                <h4>Arms</h4>
+              </div>
+              <div class="armArmorMagic2">
+                <h4>+0</h4>
+              </div>
+              <div class="armorPoints">
+                <div class="armorBonus">
+                  <h3>+3</h3>
+                </div>
+                <div class="armorTotal">
+                  <h6>(*1)</h6>
+                </div>
+              </div>
+
+              <div class="waistArmorName">
+                <h4>Waist</h4>
+              </div>
+              <div class="armorPoints">
+                <div class="armorBonus">
+                  <h3>+3</h3>
+                </div>
+                <div class="armorTotal">
+                  <h6>(*4)</h6>
+                </div>
+              </div>
+              <div class="waistArmorMagic">
+                <h4>+5</h4>
+              </div>
+
+              <div class="legArmorMagic1">
+                <h4>+3</h4>
+              </div>
+              <div class="armorPoints">
+                <div class="armorBonus">
+                  <h3>+3</h3>
+                </div>
+                <div class="armorTotal">
+                  <h6>(*1)</h6>
+                </div>
+              </div>
+              <div class="legArmorName">
+                <h4>Legs</h4>
+              </div>
+              <div class="armorPoints">
+                <div class="armorBonus">
+                  <h3>+3</h3>
+                </div>
+                <div class="armorTotal">
+                  <h6>(*1)</h6>
+                </div>
+              </div>
+              <div class="legArmorMagic2">
+                <h4>+3</h4>
+              </div>
+
+              <div class="armorPoints armorIndented">
+                <div class="armorBonus">
+                  <h3>+3</h3>
+                </div>
+                <div class="armorTotal">
+                  <h6>(*1)</h6>
+                </div>
+              </div>
+              <div class="footArmorMagic1">
+                <h4>+5</h4>
+              </div>
+              <div class="footArmorName">
+                <h4>Feet</h4>
+              </div>
+              <div class="footArmorMagic2">
+                <h4>+5</h4>
+              </div>
+              <div class="armorPoints">
+                <div class="armorBonus">
+                  <h3>+3</h3>
+                </div>
+                <div class="armorTotal">
+                  <h6>(*1)</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="coreHolder">
+            <div class="coreName">
+              <div class="corePoints">
+                <h1>5</h1>
+                <h4>+0</h4>
+              </div>
+              <h3>CORE</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="mainSkillCard">
+          <div class="skillCard" id="strengthCard">
+            <div class="attributeHolder" id="strengthHolder">
+              <div class="attributeName" id="strengthName">
+                <h3>Strength</h3>
+              </div>
+              <div class="attributePoints" id="strengthPoints">
+                <div class="attributeBonus" id="strengthBonusPoints">
+                  <h1>+2</h1>
+                </div>
+                <div class="attributeTotal" id="strengthTotalPoints">
+                  <h3>7</h3>
+                </div>
+              </div>
+              <div class="attributeDice" id="strengthDice">
+                <h3>d6</h3>
+              </div>
+            </div>
+
+            <div class="skillHolder">
+              <button type="button" class="skillName1" id="swingName">
+                Swing
+              </button>
+              <div class="skillPoints" id="swingPoints">
+                <div class="skillBonus" id="swingBonusPoints">
+                  <h3>+2</h3>
+                </div>
+                <div class="skillTotal" id="swingTotalPoints">
+                  <h6>9</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="swingMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="swingFlatBonus">
+                <h4>+0</h4>
+              </div>
+
+              <button type="button" class="skillName2" id="springName">
+                Spring
+              </button>
+              <div class="skillPoints" id="springPoints">
+                <div class="skillBonus" id="springBonusPoints">
+                  <h3>+2</h3>
+                </div>
+                <div class="skillTotal" id="springTotalPoints">
+                  <h6>9</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="springMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="springFlatBonus">
+                <h4>+0</h4>
+              </div>
+
+              <button type="button" class="skillName3" id="sprintName">
+                Sprint
+              </button>
+              <div class="skillPoints" id="sprintPoints">
+                <div class="skillBonus" id="sprintBonusPoints">
+                  <h3>+2</h3>
+                </div>
+                <div class="skillTotal" id="sprintTotalPoints">
+                  <h6>9</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="sprintMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="sprintFlatBonus">
+                <h4>+0</h4>
+              </div>
+
+              <button type="button" class="skillName2" id="graspName">
+                Grasp
+              </button>
+              <div class="skillPoints" id="graspPoints">
+                <div class="skillBonus" id="graspBonusPoints">
+                  <h3>+3</h3>
+                </div>
+                <div class="skillTotal" id="graspTotalPoints">
+                  <h6>10</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="graspMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="graspFlatBonus">
+                <h4>+0</h4>
+              </div>
+
+              <button type="button" class="skillName1" id="enduranceName">
+                Endurance
+              </button>
+              <div class="skillPoints" id="endurancePoints">
+                <div class="skillBonus" id="enduranceBonusPoints">
+                  <h3>+2</h3>
+                </div>
+                <div class="skillTotal" id="enduranceTotalPoints">
+                  <h6>9</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="enduranceMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="enduranceFlatBonus">
+                <h4>+0</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="skillCard" id="dexterityCard">
+            <div class="attributeHolder" id="dexterityHolder">
+              <div class="attributeName" id="dexterityName">
+                <h3>Dexterity</h3>
+              </div>
+              <div class="attributePoints" id="dexterityPoints">
+                <div class="attributeBonus" id="dexterityBonusPoints">
+                  <h1>+3</h1>
+                </div>
+                <div class="attributeTotal" id="dexterityTotalPoints">
+                  <h3>8</h3>
+                </div>
+              </div>
+              <div class="attributeDice" id="dexterityDice">
+                <h3>d6</h3>
+              </div>
+            </div>
+
+            <div class="skillHolder">
+              <button type="button" class="skillName1" id="agilityName">
+                Agility
+              </button>
+              <div class="skillPoints" id="agilityPoints">
+                <div class="skillBonus" id="agilityBonusPoints">
+                  <h3>+2</h3>
+                </div>
+                <div class="skillTotal" id="agilityTotalPoints">
+                  <h6>10</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="agilityMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="agilityFlatBonus">
+                <h4>+0</h4>
+              </div>
+
+              <button type="button" class="skillName2" id="reactionName">
+                Reaction
+              </button>
+              <div class="skillPoints" id="reactionPoints">
+                <div class="skillBonus" id="reactionBonusPoints">
+                  <h3>+4</h3>
+                </div>
+                <div class="skillTotal" id="reactionTotalPoints">
+                  <h6>12</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="reactionMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="reactionFlatBonus">
+                <h4>+0</h4>
+              </div>
+
+              <button type="button" class="skillName3" id="stealthName">
+                Stealth
+              </button>
+              <div class="skillPoints" id="stealthPoints">
+                <div class="skillBonus" id="stealthBonusPoints">
+                  <h3>+3</h3>
+                </div>
+                <div class="skillTotal" id="stealthTotalPoints">
+                  <h6>11</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="stealthMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="stealthFlatBonus">
+                <h4>+3</h4>
+              </div>
+
+              <button type="button" class="skillName2" id="handlingName">
+                Handling
+              </button>
+              <div class="skillPoints" id="handlingPoints">
+                <div class="skillBonus" id="handlingBonusPoints">
+                  <h3>-1</h3>
+                </div>
+                <div class="skillTotal" id="handlingTotalPoints">
+                  <h6>7</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="handlingMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="handlingFlatBonus">
+                <h4>+0</h4>
+              </div>
+
+              <button type="button" class="skillName1" id="perceptionName">
+                Perception
+              </button>
+              <div class="skillPoints" id="perceptionPoints">
+                <div class="skillBonus" id="perceptionBonusPoints">
+                  <h3>+2</h3>
+                </div>
+                <div class="skillTotal" id="perceptionTotalPoints">
+                  <h6>10</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="perceptionMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="perceptionFlatBonus">
+                <h4>+0</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="skillCard" id="intelligenceCard">
+            <div class="attributeHolder" id="intelligenceHolder">
+              <div class="attributeName" id="intelligenceName">
+                <h3>Intelligence</h3>
+              </div>
+              <div class="attributePoints" id="intelligencePoints">
+                <div class="attributeBonus" id="intelligenceBonusPoints">
+                  <h1>+2</h1>
+                </div>
+                <div class="attributeTotal" id="intelligenceTotalPoints">
+                  <h3>7</h3>
+                </div>
+              </div>
+              <div class="attributeDice" id="intelligenceDice">
+                <h3>d6</h3>
+              </div>
+            </div>
+
+            <div class="skillHolder">
+              <button type="button" class="skillName1" id="insightName">
+                Insight
+              </button>
+              <div class="skillPoints" id="insightPoints">
+                <div class="skillBonus" id="insightBonusPoints">
+                  <h3>+2</h3>
+                </div>
+                <div class="skillTotal" id="insightTotalPoints">
+                  <h6>9</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="insightMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="insightFlatBonus">
+                <h4>+0</h4>
+              </div>
+
+              <button type="button" class="skillName2" id="persuasionName">
+                Persuasion
+              </button>
+              <div class="skillPoints" id="persuasionPoints">
+                <div class="skillBonus" id="persuasionBonusPoints">
+                  <h3>+0</h3>
+                </div>
+                <div class="skillTotal" id="persuasionTotalPoints">
+                  <h6>7</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="persuasionMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="persuasionFlatBonus">
+                <h4>+0</h4>
+              </div>
+
+              <button type="button" class="skillName3" id="trickeryName">
+                Trickery
+              </button>
+              <div class="skillPoints" id="trickeryPoints">
+                <div class="skillBonus" id="trickeryBonusPoints">
+                  <h3>+2</h3>
+                </div>
+                <div class="skillTotal" id="trickeryTotalPoints">
+                  <h6>9</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="trickeryMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="trickeryFlatBonus">
+                <h4>+0</h4>
+              </div>
+
+              <button type="button" class="skillName2" id="accuracyName">
+                Accuracy
+              </button>
+              <div class="skillPoints" id="accuracyPoints">
+                <div class="skillBonus" id="accuracyBonusPoints">
+                  <h3>+3</h3>
+                </div>
+                <div class="skillTotal" id="accuracyTotalPoints">
+                  <h6>10</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="accuracyMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="accuracyFlatBonus">
+                <h4>+0</h4>
+              </div>
+
+              <button type="button" class="skillName1" id="survivalName">
+                Survival
+              </button>
+              <div class="skillPoints" id="survivalPoints">
+                <div class="skillBonus" id="survivalBonusPoints">
+                  <h3>+1</h3>
+                </div>
+                <div class="skillTotal" id="survivalTotalPoints">
+                  <h6>8</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="survivalMasteryPoints">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="survivalFlatBonus">
+                <h4>+0</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="skillCard" id="extraSkillCard">
+            <div class="attributeName" id="extraSkillsName">
+              <h3 style="border-bottom: 3px solid #333">Extra Skills</h3>
+            </div>
+
+            <div class="skillHolder">
+              <div class="extraSkillAttr1" id="extraSkillAttr1">
+                <div class="extraSkillAttrBonus" id="extraSkillAttrBonus1">
+                  <h3>+2</h3>
+                </div>
+                <div class="extraSkillAttrName" id="extraSkillAttrName1">
+                  <h6>INT</h6>
+                </div>
+              </div>
+              <div class="skillName5" id="extraSkillName1">
+                <h4>Blacksmith</h4>
+              </div>
+              <div class="skillPoints" id="extraSkillPoints1">
+                <div class="skillBonus" id="extraSkillBonusPoints1">
+                  <h3>+3</h3>
+                </div>
+                <div class="skillTotal" id="extraSkillTotalPoints1">
+                  <h6>10</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="extraSkillMasteryPoints1">
+                <h4>+1</h4>
+              </div>
+              <div class="skillFlat" id="extraSkillFlatBonus1">
+                <h4>+0</h4>
+              </div>
+
+              <div class="extraSkillAttr2" id="extraSkillAttr2">
+                <div class="extraSkillAttrBonus" id="extraSkillAttrBonus2">
+                  <h3>+3</h3>
+                </div>
+                <div class="extraSkillAttrName" id="extraSkillAttrName2">
+                  <h6>DEX</h6>
+                </div>
+              </div>
+              <div class="skillName6" id="extraSkillName2">
+                <h4>Escapist</h4>
+              </div>
+              <div class="skillPoints" id="extraSkillPoints2">
+                <div class="skillBonus" id="extraSkillBonusPoints2">
+                  <h3>+2</h3>
+                </div>
+                <div class="skillTotal" id="extraSkillTotalPoints2">
+                  <h6>10</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="extraSkillMasteryPoints2">
+                <h4>+2</h4>
+              </div>
+              <div class="skillFlat" id="extraSkillFlatBonus2">
+                <h4>+0</h4>
+              </div>
+
+              <div class="extraSkillAttr3" id="extraSkillAttr3">
+                <div class="extraSkillAttrBonus" id="extraSkillAttrBonus3">
+                  <h3>+0</h3>
+                </div>
+                <div class="extraSkillAttrName" id="extraSkillAttrName3">
+                  <h6>TBD</h6>
+                </div>
+              </div>
+              <div class="skillName7" id="extraSkillName3">
+                <h4>Placeholder</h4>
+              </div>
+              <div class="skillPoints" id="extraSkillPoints3">
+                <div class="skillBonus" id="extraSkillBonusPoints3">
+                  <h3>+0</h3>
+                </div>
+                <div class="skillTotal" id="extraSkillTotalPoints3">
+                  <h6>3</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="extraSkillMasteryPoints3">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="extraSkillFlatBonus3">
+                <h4>+0</h4>
+              </div>
+
+              <div class="extraSkillAttr2" id="extraSkillAttr4">
+                <div class="extraSkillAttrBonus" id="extraSkillAttrBonus4">
+                  <h3>+0</h3>
+                </div>
+                <div class="extraSkillAttrName" id="extraSkillAttrName4">
+                  <h6>TBD</h6>
+                </div>
+              </div>
+              <div class="skillName6" id="extraSkillName4">
+                <h4>Placeholder</h4>
+              </div>
+              <div class="skillPoints" id="extraSkillPoints4">
+                <div class="skillBonus" id="extraSkillBonusPoints4">
+                  <h3>+0</h3>
+                </div>
+                <div class="skillTotal" id="extraSkillTotalPoints4">
+                  <h6>3</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="extraSkillMasteryPoints4">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="extraSkillFlatBonus4">
+                <h4>+0</h4>
+              </div>
+
+              <div class="extraSkillAttr1" id="extraSkillAttr5">
+                <div class="extraSkillAttrBonus" id="extraSkillAttrBonus5">
+                  <h3>+0</h3>
+                </div>
+                <div class="extraSkillAttrName" id="extraSkillAttrName5">
+                  <h6>TBD</h6>
+                </div>
+              </div>
+              <div class="skillName5" id="extraSkillName5">
+                <h4>Placeholder</h4>
+              </div>
+              <div class="skillPoints" id="extraSkillPoints5">
+                <div class="skillBonus" id="extraSkillBonusPoints5">
+                  <h3>+0</h3>
+                </div>
+                <div class="skillTotal" id="extraSkillTotalPoints5">
+                  <h6>3</h6>
+                </div>
+              </div>
+              <div class="skillMastery" id="extraSkillMasteryPoints5">
+                <h4>+0</h4>
+              </div>
+              <div class="skillFlat" id="extraSkillFlatBonus5">
+                <h4>+0</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="diceRollerPopup" data-card-roller>
+        <h3 class="formTitle">Result</h3>
+        <div class=rollerHolder>
+          <div class="rollerEquation">
+            <h4>3d6+4d6+4d6+3+1</h4>
+          </div>
+          <div class="rollerEquation">
+            <h4>3+4+2+3+1</h4>
+          </div>
+          <div class="rollerResult">
+            <h1>63<h1>
+          </div>
+          <button type="button" class="formTitle clear">
+            Clear
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

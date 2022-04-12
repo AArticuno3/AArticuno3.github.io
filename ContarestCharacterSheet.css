@@ -1,0 +1,1070 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin: auto 0;
+}
+
+.loginPad {
+  display: none;
+  width: 250px;
+  height: 325px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: 3px solid #333;
+  border-radius: 2rem;
+  background: linear-gradient(0deg, rgba(231,166,244,0.25) 0%, rgba(97,80,210,0.25) 33%, rgba(101,247,249,0.25) 64%, rgba(184,247,207,0.25) 100%);
+  overflow: hidden;
+}
+
+.loginPad.active {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formTitle {
+  margin: 1rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  width: 75%;
+  margin: 8px auto 5px;
+  padding: 2px;
+  align-self: center;
+  background: rgba(150, 150, 250, 1);
+  border-width: 3px;
+  border-color: #666 #222 #222 #666;
+  border-style: solid;
+  border-radius: 9999px;
+}
+
+.formGroup label {
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #333;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto;
+  gap: 0.25rem;
+  max-width: 200px;
+}
+
+.formGroup input {
+  padding: 0.25em;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.loadButton {
+  width: 75%;
+  height: 2rem;
+  margin: 10px;
+  align-self: center;
+  background: rgba(150, 150, 250, 1);
+  border-width: 3px;
+  border-radius: 9999px;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.characterSheet {
+  display: none;
+  width: 48rem;
+  height: 46rem;
+  margin: 0 auto;
+  border-radius: 5rem;
+  background: linear-gradient(0deg, rgba(231,166,244,0.25) 0%, rgba(97,80,210,0.25) 33%, rgba(101,247,249,0.25) 64%, rgba(184,247,207,0.25) 100%);
+}
+
+.characterSheet.active {
+  display: block;
+}
+
+.mainInfoCard {
+  position: relative;
+  top: 3rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  padding: 0;
+}
+
+.portraitBorder1,
+.portraitBorder2,
+.portraitBorder3,
+.portraitBorder4 {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+}
+
+.portraitBorder1 {
+  top: 1rem;
+  border-top: 16px double #333;
+  border-bottom: 0px double #333;
+  border-left: 16px double #333;
+  border-right: 0px double #333;
+  border-radius: 20%;
+  transform: skew(-10deg, 0deg) rotate(0deg);
+  clip-path: polygon(0% 0%, 0% 80%, 60% 80%, 60% 0%);
+}
+
+.portraitBorder2 {
+  top: 1rem;
+  border-top: 16px double #333;
+  border-bottom: 0px double #333;
+  border-left: 0px double #333;
+  border-right: 16px double #333;
+  border-radius: 20%;
+  transform: skew(10deg, 0deg) rotate(0deg);
+  clip-path: polygon(100% 0%, 100% 80%, 40% 80%, 40% 0%);
+}
+
+.portraitBorder3 {
+  top: 3.1rem;
+  border-top: 0px double #333;
+  border-bottom: 16px double #333;
+  border-left: 0px double #333;
+  border-right: 16px double #333;
+  border-radius: 20%;
+  transform: skew(-10deg, 0deg) rotate(-19.5deg);
+  clip-path: polygon(41.4% 50%, 100% 50%, 100% 100%, 41.4% 100%);
+}
+
+.portraitBorder4 {
+  top: 3.1rem;
+  border-top: 0px double #333;
+  border-bottom: 16px double #333;
+  border-left: 16px double #333;
+  border-right: 0px double #333;
+  border-radius: 20%;
+  transform: skew(10deg, 0deg) rotate(19.5deg);
+  clip-path: polygon(0% 50%, 58.6% 50%, 58.6% 100%, 0% 100%);
+}
+
+.portraitImg,
+.portraitBackground {
+  position: absolute;
+  top: 1.5rem;
+  width: 12.5rem;
+  height: 13rem;
+  border: 1px solid #333;
+  clip-path: polygon(
+    30% 2%,
+    70% 2%,
+    80% 3.8%,
+    86.5% 10%,
+    90.5% 20%,
+    100% 78%,
+    96% 88%,
+    85% 94%,
+    65% 100%,
+    35% 100%,
+    15% 94%,
+    4% 88%,
+    0% 78%,
+    9.5% 20%,
+    13.5% 10%,
+    20% 3.8%
+  );
+}
+
+.portraitBackground {
+  top: 0.9rem;
+  width: 13.9rem;
+  height: 14.15rem;
+  background: #d0f4e4;
+}
+
+.portraitImg img {
+  position: relative;
+  top: -3rem;
+  left: -8.5rem;
+  width: 30rem;
+}
+
+.leftInfoBorder1,
+.leftInfoBorder2 {
+  width: 6rem;
+  height: 6rem;
+  border-top: 4px solid #333;
+  border-left: 5px solid #333;
+  border-bottom: 4px solid #333;
+  border-right: 5px solid #333;
+  background-color: #d5fbb5;
+}
+
+.leftInfoBorder1 {
+  position: relative;
+  top: 14.85rem;
+  left: -4.8rem;
+  border-radius: 20%;
+  transform: rotate(20deg) skew(30deg, 0deg);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 90%);
+}
+
+.leftInfoBorder2 {
+  position: relative;
+  top: 7.95rem;
+  left: -4.9rem;
+  border-radius: 20%;
+  transform: rotate(-40deg) skew(-30deg, 0deg);
+  clip-path: polygon(0% 40%, 100% 70%, 100% 100%, 0% 100%);
+}
+
+.leftInfoCard {
+  position: absolute;
+  top: 14rem;
+  left: 1.3rem;
+  width: 6.5rem;
+  height: 9rem;
+}
+
+#jumpHeightName {
+  transform: translate(-0.2rem, 0.7rem) rotate(20deg);
+}
+
+#jumpHeight {
+  transform: translate(-0.2rem, 1.2rem) rotate(-10deg);
+}
+
+.leftInfoSplit {
+  position: relative;
+  top: 1.35rem;
+  left: 1.1rem;
+  width: 5.5rem;
+  height: 1px;
+  border-top: 3px solid #333;
+  transform: rotate(-10deg);
+}
+
+#fallHeight {
+  transform: translate(0.3rem, 1.4rem) rotate(-10deg);
+}
+
+#fallHeightName {
+  transform: translate(0.7rem, 1.8rem) rotate(-40deg);
+}
+
+.rightInfoBorder1,
+.rightInfoBorder2 {
+  width: 6rem;
+  height: 6rem;
+  border-top: 4px solid #333;
+  border-left: 5px solid #333;
+  border-bottom: 4px solid #333;
+  border-right: 5px solid #333;
+  background-color: #feebb7;
+}
+
+.rightInfoBorder1 {
+  position: relative;
+  top: 1.5rem;
+  right: -4.75rem;
+  border-radius: 20%;
+  transform: rotate(40deg) skew(30deg, 0deg);
+  clip-path: polygon(0% 70%, 100% 30%, 100% 100%, 0% 100%);
+}
+
+.rightInfoBorder2 {
+  position: relative;
+  top: -4.6rem;
+  right: -4.69rem;
+  border-radius: 20%;
+  transform: rotate(-20deg) skew(-30deg, 0deg);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 30%);
+}
+
+.rightInfoCard {
+  position: absolute;
+  top: 14.6rem;
+  right: 1.7rem;
+  width: 6.5rem;
+  height: 9rem;
+}
+
+#carryWeightName {
+  transform: translate(0.5rem, 0rem) rotate(-20deg) scaleX(0.9);
+}
+
+#carryWeight {
+  transform: translate(0.3rem, 0.8rem) rotate(10deg);
+}
+
+.rightInfoSplit {
+  position: relative;
+  top: 0.7rem;
+  left: 0rem;
+  width: 5.5rem;
+  height: 1px;
+  border-top: 3px solid #333;
+  transform: rotate(10deg);
+}
+
+#movementSpeed {
+  transform: translate(0rem, 0.8rem) rotate(10deg);
+}
+
+#movementSpeedName {
+  transform: translate(-0.6rem, 1.1rem) rotate(40deg) scaleX(0.8) scaleY(0.9);
+}
+
+.statsBorder1,
+.statsBorder2 {
+  width: 12rem;
+  height: 12rem;
+  border-top: 5px solid #333;
+  border-left: 6px solid #333;
+  border-right: 6px solid #333;
+  background-color: #f4caba;
+}
+
+.statsBorder1 {
+  position: relative;
+  top: -4rem;
+  left: 2.2rem;
+  border-radius: 20%;
+  transform: rotate(40deg) skew(40deg, 0deg);
+  clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 20% 80%);
+}
+
+.statsBorder2 {
+  position: relative;
+  top: -16.55rem;
+  left: -2.2rem;
+  border-radius: 20%;
+  transform: rotate(-40deg) skew(-40deg, 0deg);
+  clip-path: polygon(0% 0%, 80% 0%, 80% 80%, 0% 80%);
+}
+
+.statsBorder3 {
+  width: 13.65rem;
+  height: 12rem;
+  position: relative;
+  top: -22.5rem;
+  background-color: #f4caba;
+  border-top: 0px solid #333;
+  border-right: 4px solid #333;
+  border-bottom: 4px solid #333;
+  border-left: 4px solid #333;
+  border-radius: 0% 0% 20% 20%;
+}
+
+.statsCard {
+  position: absolute;
+  top: 21.8rem;
+}
+
+.totalArmorHolder {
+  margin: 0 auto;
+  display: flex;
+  width: 9.5rem;
+  z-index: 2;
+}
+
+.totalArmorName {
+  height: 1.25rem;
+  width: 4.5rem;
+  align-self: center;
+  border-left: 2px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 10px 0px 0px 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  z-index: 2;
+}
+
+.totalArmorMagic {
+  height: 1.25rem;
+  width: 2.5rem;
+  align-self: center;
+  border-right: 1px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 0px 10px 10px 0px;
+  background: linear-gradient(
+    -90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  z-index: 2;
+}
+
+.totalArmorPoints {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 3px solid #333;
+  border-radius: 25%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+
+.totalArmorType {
+  position: relative;
+  top: -0.8rem;
+  height: 1.35rem;
+  width: 8rem;
+  align-self: center;
+  margin: 0 auto;
+  padding-top: 0.6rem;
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 0px 0px 10px 10px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+.armorHolder {
+  display: grid;
+  grid-template-rows: repeat(7, 1.75rem);
+  grid-template-columns: repeat(12, 1.2rem);
+}
+
+.headArmorName,
+.shoulderArmorMagic1,
+.chestArmorName,
+.waistArmorName,
+.legArmorMagic1 {
+  align-self: center;
+  border-left: 2px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 10px 0px 0px 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
+.headArmorMagic,
+.shoulderArmorMagic2,
+.chestArmorMagic,
+.waistArmorMagic,
+.legArmorMagic2 {
+  align-self: center;
+  border-right: 1px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 0px 10px 10px 0px;
+  background: linear-gradient(
+    -90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
+.shoulderArmorName,
+.armArmorName,
+.armArmorMagic1,
+.armArmorMagic2,
+.legArmorName,
+.footArmorName,
+.footArmorMagic1,
+.footArmorMagic2 {
+  align-self: center;
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 0px 0px 0px 0px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.shoulderArmorMagic1 {
+  width: 120%;
+  justify-self: right;
+  grid-column: 2/3;
+}
+
+.shoulderArmorName {
+  grid-column: 5/9;
+}
+
+.shoulderArmorMagic2 {
+  width: 120%;
+  justify-self: left;
+  grid-column: 11/12;
+}
+
+.headArmorName,
+.chestArmorName,
+.waistArmorName {
+  grid-column: 3/6;
+}
+
+.headArmorMagic,
+.chestArmorMagic,
+.waistArmorMagic {
+  grid-column: 8/11;
+}
+
+.armArmorMagic1,
+.footArmorMagic1 {
+  width: 150%;
+  justify-self: left;
+  grid-column: 4/5;
+}
+
+.armArmorName,
+.footArmorName {
+  width: 70%;
+  justify-self: center;
+  grid-column: 5/9;
+  border-right: 2px solid #333;
+  border-left: 2px solid #333;
+}
+
+.armArmorMagic2,
+.footArmorMagic2 {
+  width: 150%;
+  justify-self: right;
+  grid-column: 9/10;
+}
+
+.legArmorMagic1 {
+  grid-column: 2/4;
+}
+
+.legArmorName {
+  grid-column: 6/8;
+}
+
+.legArmorMagic2 {
+  grid-column: 10/12;
+}
+
+.armorPoints {
+  align-self: center;
+  justify-self: center;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+  width: 2rem;
+  border: 3px solid #333;
+  border-radius: 25%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.armorIndented {
+  grid-column: span 2 /4;
+}
+
+.armorBonus {
+  height: 65%;
+}
+
+.armorTotal {
+  height: 35%;
+  border-top: 1px solid #333;
+}
+
+.coreHolder {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 13.3rem;
+  border: 4px solid #333;
+  border-radius: 40% 40% 40% 40%;
+  background: #d0f4e4;
+}
+
+.corePoints {
+  position: relative;
+  top: 3.5rem;
+}
+
+.corePoints h1 {
+  font-size: 3rem;
+}
+
+.corePoints h4 {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 4rem;
+}
+
+.corePoints h4.active {
+  display: inline-block;
+}
+
+.coreName {
+  height: 7rem;
+  text-align: center;
+  margin-top: -3rem;
+  border-bottom: 3px solid #333;
+  padding-top: 0.1rem;
+}
+
+.coreName h3 {
+  position: relative;
+  top: 3.8rem;
+}
+
+.skillCard {
+  position: relative;
+  left: 20rem;
+  display: none;
+  align-items: center;
+  width: 30rem;
+  transform: rotate(0deg);
+  border: 0px solid #333;
+}
+
+.skillCard.active {
+  display: flex;
+}
+
+#strengthCard {
+  top: -59rem;
+}
+
+#dexterityCard {
+  top: -57.5rem;
+}
+
+#intelligenceCard {
+  top: -56rem;
+}
+
+#extraSkillCard {
+  top: -54.5rem;
+  left: 17.65rem;
+}
+
+.attributeHolder {
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+  top: 0;
+  left: 2rem;
+  transform: rotate(-90deg);
+  border-top: 2px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-left: 3px solid #333;
+  border-radius: 50% 50% 200% 200%;
+}
+
+#strengthHolder {
+  background-color: #feebb7;
+}
+
+#dexterityHolder {
+  background-color: #d5fbb5;
+}
+
+#intelligenceHolder {
+  background-color: #b6e3f2;
+}
+
+.attributeName {
+  border-bottom: 3px solid #333;
+}
+
+#extraSkillsName {
+  width: 5.5rem;
+  height: 5.5rem;
+  position: relative;
+  left: 4.4rem;
+  transform: rotate(-90deg);
+  border-top: 2px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-left: 3px solid #333;
+  border-radius: 20% 20% 50% 50%;
+  background-color: #f7b8dd;
+  padding: 0.5rem 0.25rem 0 0.25rem;
+}
+
+.attributePoints {
+  width: 4.3rem;
+  transform: rotate(90deg);
+  position: relative;
+  right: 0rem;
+  bottom: 0rem;
+}
+
+.attributeBonus {
+  height: 2.15rem;
+}
+
+.attributeBonus h1 {
+  position: relative;
+  top: -0.5rem;
+}
+
+.attributeTotal {
+  height: 2rem;
+  border-top: 3px solid #333;
+}
+
+.attributeDice {
+  width: 2rem;
+  transform: rotate(90deg);
+  position: relative;
+  top: 0.4rem;
+  left: 1.8rem;
+  border-top: 1px solid #333;
+  border-right: 2px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 0 1rem 1rem 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.skillHolder {
+  width: 22rem;
+  display: grid;
+  grid-template-rows: repeat(5, 1.75rem);
+  grid-template-columns: repeat(9, 1fr);
+  position: relative;
+  right: 0rem;
+  border: 0px solid #333;
+}
+
+.skillName1,
+.skillName2,
+.skillName3 {
+  align-self: center;
+  border-left: 2px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.skillName4,
+.skillName5,
+.skillName6,
+.skillName7 {
+  align-self: center;
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.skillName1,
+.skillName4 {
+  grid-column: 1/4;
+}
+
+.skillName2,
+.skillName5 {
+  grid-column: 2/5;
+}
+
+.skillName3,
+.skillName6 {
+  grid-column: 3/6;
+}
+
+.skillName7 {
+  grid-column: 4/7;
+}
+
+#swingName,
+#springName,
+#sprintName,
+#graspName,
+#enduranceName {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(254, 235, 183, 1) 100%
+  );
+}
+
+#agilityName,
+#reactionName,
+#stealthName,
+#handlingName,
+#perceptionName {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(213, 251, 181, 1) 100%
+  );
+}
+
+#insightName,
+#persuasionName,
+#trickeryName,
+#accuracyName,
+#survivalName {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(182, 227, 242, 1) 100%
+  );
+}
+
+#extraSkillName1,
+#extraSkillName2,
+#extraSkillName3,
+#extraSkillName4,
+#extraSkillName5 {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 184, 221, 1) 100%
+  );
+}
+
+.skillPoints {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+  border: 3px solid #333;
+  border-radius: 25%;
+}
+
+.strBox,
+#swingPoints,
+#springPoints,
+#sprintPoints,
+#graspPoints,
+#endurancePoints {
+  background: #feebb7 !important;
+}
+
+.dexBox,
+#agilityPoints,
+#reactionPoints,
+#stealthPoints,
+#handlingPoints,
+#perceptionPoints {
+  background: #d5fbb5 !important;
+}
+
+.intBox,
+#insightPoints,
+#persuasionPoints,
+#trickeryPoints,
+#accuracyPoints,
+#survivalPoints {
+  background: #b6e3f2 !important;
+}
+
+#extraSkillPoints1,
+#extraSkillPoints2,
+#extraSkillPoints3,
+#extraSkillPoints4,
+#extraSkillPoints5 {
+  background: #f7b8dd;
+}
+
+.skillBonus {
+  height: 65%;
+}
+
+.skillTotal {
+  height: 35%;
+  border-top: 1px solid #333;
+}
+
+.skillMastery {
+  display: none;
+  align-self: center;
+  border-right: 1px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #333;
+}
+
+.skillMastery.before {
+  border-right: 2px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.skillMastery.active {
+  display: block;
+}
+
+.strMasteryBox,
+#swingMasteryPoints,
+#springMasteryPoints,
+#sprintMasteryPoints,
+#graspMasteryPoints,
+#enduranceMasteryPoints {
+  background: linear-gradient(
+    -90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(254, 235, 183, 1) 50%
+  ) !important;
+}
+
+.dexMasteryBox,
+#agilityMasteryPoints,
+#reactionMasteryPoints,
+#stealthMasteryPoints,
+#handlingMasteryPoints,
+#perceptionMasteryPoints {
+  background: linear-gradient(
+    -90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(213, 251, 181, 1) 50%
+  ) !important;
+}
+
+.intMasteryBox,
+#insightMasteryPoints,
+#persuasionMasteryPoints,
+#trickeryMasteryPoints,
+#accuracyMasteryPoints,
+#survivalMasteryPoints {
+  background: linear-gradient(
+    -90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(182, 227, 242, 1) 50%
+  ) !important;
+}
+
+#extraSkillMasteryPoints1,
+#extraSkillMasteryPoints2,
+#extraSkillMasteryPoints3,
+#extraSkillMasteryPoints4,
+#extraSkillMasteryPoints5 {
+  background: linear-gradient(
+    -90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 184, 221, 1) 50%
+  );
+}
+
+.skillFlat {
+  display: none;
+  align-self: center;
+  border-right: 2px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 0px 10px 10px 0px;
+  background: rgba(255, 255, 255, 1) 0%;
+}
+
+.skillFlat.active {
+  display: block;
+}
+
+.extraSkillAttr1,
+.extraSkillAttr2,
+.extraSkillAttr3 {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+  border-left: 2px solid #333;
+  border-top: 1px solid #333;
+  border-right: 3px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius: 15% 25% 25% 15%;
+}
+
+.extraSkillAttr1 {
+  grid-column: 1/2;
+}
+
+.extraSkillAttr2 {
+  grid-column: 2/3;
+}
+
+.extraSkillAttr3 {
+  grid-column: 3/4;
+}
+
+#extraSkillAttr1,
+#extraSkillAttr2,
+#extraSkillAttr3,
+#extraSkillAttr4,
+#extraSkillAttr5 {
+  background-color: #ffffff;
+}
+
+.extraSkillAttrBonus {
+  height: 65%;
+}
+
+.extraSkillAttrName {
+  height: 35%;
+  border-top: 1px solid #333;
+}
+
+.diceRollerPopup {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  width: 300px;
+  height: 300px;
+  margin: 10rem auto;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  background-color: #fff;
+  background: linear-gradient(180deg, rgba(231,166,244,0.25) 0%, rgba(97,80,210,0.25) 33%, rgba(101,247,249,0.25) 64%, rgba(184,247,207,0.25) 100%);
+  overflow: hidden;
+}
+
+.diceRollerPopup.active {
+  display: block;
+  box-shadow: 0px 0px 5px 10px #fff;
+}
+
+.rollerHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.rollerEquation {
+  display: flex;
+  height: 10px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.rollerEquation h4 {
+  margin: -4px auto;
+}
+
+.rollerResult {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 150px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 0rem;
+  border: 1px solid #333;
+  border-radius: 2rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.rollerResult h1 {
+  font-size: 80px;
+  margin: 12px 0;
+}
