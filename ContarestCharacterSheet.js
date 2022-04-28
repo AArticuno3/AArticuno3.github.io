@@ -144,14 +144,16 @@ if (loginCard.classList.contains("active")) {
                 if (inputs[1].value == "Ari" || inputs[1].value == "spark152") {
                     if (inputs[2].value == "FavoritePlayer") {
                         currentCharacter = "Mira"
+                        document.getElementByClassName("portraitImg")[0].src = "1 Mira 5.5 (10).png";
                     }
                 } else if (inputs[1].value == "Elias" || inputs[1].value == "agrofrog") {
                     if (inputs[2].value == "Erkiiiiiiiiiii") {
                         currentCharacter = "Felix"
+                        document.getElementByClassName("portraitImg")[0].src = "2 Felix.png";
                     }
                 }
             }
-
+            
             document.getElementsByClassName("armorPoints")[0].getElementsByClassName("armorBonus")[0].querySelectorAll("h3")[0].innerText = "+" + Characters[currentCharacter]["Armor"]["Head"][0]
             document.getElementsByClassName("headArmorMagic")[0].querySelectorAll("h4")[0].innerText = "+" + Characters[currentCharacter]["Armor"]["Head"][1]
 
